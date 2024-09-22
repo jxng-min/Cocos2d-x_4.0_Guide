@@ -28,6 +28,9 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-22 204528](https://github.com/user-attachments/assets/0d574a23-0c31-4a25-9a19-4f469333dc7f)
+
+
 > auto sprite = Sprite::create("HelloWorld.png");
 
 코코스2d-x에서 객체를 생성할 때는 C++의 new가 아닌 **create()라는 코코스2d-x의 메소드를 사용해서 생성**한다.
@@ -82,6 +85,9 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-22 204618](https://github.com/user-attachments/assets/71bc1291-e2b7-464e-b819-a0a4d6405be8)
+
+
 > auto sprite = Sprite::create("HelloWorld.png", Rect(0, 0, 100, 100));
 
 스프라이트를 생성할 때 매개변수로 영역을 설정하는 Rect()를 추가로 입력할 수도 있다.
@@ -117,6 +123,9 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-22 204657](https://github.com/user-attachments/assets/f89d940e-0a2d-4546-89d3-c6a524ce41af)
+
 
 위의 코드에서는 부모인 this의 좌표가 (0, 0)에서 (100, 100)만큼 이동했다. 
 
@@ -359,6 +368,9 @@ bool HelloWorld::init()
 ### 2.2.4 스프라이트를 이용한 화면 구성
 
 지금까지 공부한 내용들로 스프라이트를 생성해서 화면을 구성해보자.
+
+![화면 캡처 2024-09-22 222034](https://github.com/user-attachments/assets/75202a3c-3cb6-46ab-b60d-1c0e92fb85ce)
+
 
 스프라이트의 위치는 수치를 입력하는 것이 아닌 화면 크기 값을 가져와서 사용할 것이다.
 
