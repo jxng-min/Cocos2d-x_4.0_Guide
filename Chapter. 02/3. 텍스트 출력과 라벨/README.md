@@ -35,6 +35,8 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-22 224212](https://github.com/user-attachments/assets/185d0c16-21e2-4b02-b3b4-fcef0480915e)
+
 > auto label = Label::createWithSystemFont("Hello World", "Thonburi", 34);
 
 Label을 생성하는 가장 기본적인 방법으로 매개변수로 **출력하려는 문자열, 폰트의 이름, 폰트의 크기를 입력**한다.
@@ -62,6 +64,8 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-22 224605](https://github.com/user-attachments/assets/b3f1c468-a115-43bd-a78b-e52996370714)
 
 위의 코드와 같이 입력하면 아래 그림과 같이 지정한 너비의 크기만큼 라벨이 출력되며, **지정한 크기를 초과할 경우에는 자동으로 줄 바꿈을 하게 된다**.
 
@@ -105,6 +109,8 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-23 120028](https://github.com/user-attachments/assets/13479335-c4bd-4839-af49-9ab59921d21d)
+
 > auto label = Label::createWithSystemFont("Hello World", "Thonburi", 34, Size(150, 150), TextHAligment::CENTER, TextVAligment::CENTER);
 
 위의 코드에서 라벨을 생성할 때 매개변수의 마지막에 글자의 세로 정렬 값을 추가로 설정했다.
@@ -135,11 +141,14 @@ bool HelloWorld::init()
     if(!Layer::init())
         return false;
 
+    auto label = Label::createWithTTF("Hello World", "PFStarDustS.ttf", 34);
 
-    auto label = Label::createWithTTF("Hello World", )
+    return true;
 }
 ```
 </br>
+
+![화면 캡처 2024-09-23 122407](https://github.com/user-attachments/assets/ec0f7ed6-336e-40ac-a1d5-cc5c64d8deb5)
 
 ### 2.3.3 BMFont
 
@@ -166,6 +175,8 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-23 123259](https://github.com/user-attachments/assets/d3f9a28f-9b75-4b39-91ba-e0821ac7788e)
 
 BMFont를 가장 일반적으로 사용하는 방법은 **createWithBMFont()에 .fnt 파일명과 출력할 텍스트를 입력**하는 것이다.
 
@@ -195,6 +206,8 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-23 123953](https://github.com/user-attachments/assets/cb8c80d1-a9f7-4a69-9610-fbde9272133b)
 
 > auto label = Label::createWithBMFont("bitmapFontChinese.fnt", "Hello World", TextHAlignment::CENTER, 120);
 
@@ -230,6 +243,8 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-23 144109](https://github.com/user-attachments/assets/3ed88577-c930-4d81-82d8-899f6098a618)
 
 > auto label = Label::createWithCharMap("labelatlas.png", 16, 32, '.');
 
@@ -337,6 +352,8 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-23 152849](https://github.com/user-attachments/assets/f1efa5ad-e153-44f1-95a0-c9feee938517)
 
 위의 코드를 보면 라벨에 색상들을 지정할 수 있다. 색상은 Color3B와 Color4B로 지정한다.
 
