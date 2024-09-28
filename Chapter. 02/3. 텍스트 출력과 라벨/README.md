@@ -135,8 +135,9 @@ bool HelloWorld::init()
     if(!Layer::init())
         return false;
 
+    auto label = Label::createWithTTF("Hello World", "PFStarDustS.ttf", 34);
 
-    auto label = Label::createWithTTF("Hello World", )
+    return true;
 }
 ```
 </br>
