@@ -24,6 +24,9 @@ bool HelloWorld::init()
 }
 ```
 
+![화면 캡처 2024-09-23 222715](https://github.com/user-attachments/assets/5ab1e6e8-1f00-45ae-84cd-796c96fe0965)
+
+
 void HelloWorld::menuCallback(Ref* sender)
 {
     CCLOG("menuCallback");
@@ -62,6 +65,9 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-23 223035](https://github.com/user-attachments/assets/491ee6ce-d6cd-43d0-a916-af2893aff84d)
+
 
 > auto item_1 = MenuItemFont::create("Play", CC_CALLBACK_1(HelloWorld::menuCallback, this));
 
@@ -135,6 +141,9 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-25 224820](https://github.com/user-attachments/assets/84adaf15-73f5-491a-997b-2204557e5c21)
+
+
 사용법은 MenuItemFont와 동일하지만 메뉴 문구를 직접 입력하지 않고, 해당 문구로 라벨을 만든 후 라벨을 사용한다는 점에서 다르다.
 
 </br>
@@ -170,6 +179,9 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-26 095937](https://github.com/user-attachments/assets/fbdb26b4-befd-428d-85b2-32be7172392b)
+
+
 메뉴가 비활성화 상태인 경우 메뉴 아이템을 클릭해도 아무런 반응을 하지 않는다.
 
 </br>
@@ -186,7 +198,7 @@ item_1의 경우 일반 이미지와 선택 이미지를 입력하고 **비활�
 
 setEnabled()는 **객체의 활성화 여부를 설정**하는 메소드다.
 
-기본값은 활성화 상태로 되어 있으며 매**개변수로 false로 입력하면 객체가 비활성화** 된다.
+기본값은 활성화 상태로 되어 있으며 **매개변수로 false로 입력하면 객체가 비활성화** 된다.
 
 비활성화 상태에서는 선택도 되지 않고, 메소드도 호출할 수 없다.
 
@@ -228,6 +240,9 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-26 100824](https://github.com/user-attachments/assets/b05c8d55-d411-4a58-9379-96ad640774b1)
+
+
 위의 예제에서는 spr_3_s의 세로 크기를 0.5로 축소했기 때문에 축소된 이미지로 보인다.
 
 </br>
@@ -260,6 +275,9 @@ bool HelloWorld::init()
 }
 ```
 </br>
+
+![화면 캡처 2024-09-28 185720](https://github.com/user-attachments/assets/5df552e4-d506-4a60-8985-8f5bfb13ec45)
+
 
 > auto item_1_1 = MenuItemImage::create("btn-play-normal.png", "btn-play-selected.png");
 > auto item_1_2 = MenuItemImage::create("btn-highscores-normal.png", "btn-highscores-selected.png");
