@@ -166,6 +166,8 @@ bool GameScene::onTouchBegan(Touch* touch, Event* unused_event)
 ```
 </br>
 
+![화면 캡처 2024-09-29 174707](https://github.com/user-attachments/assets/f1657fba-1d8c-42bd-b080-7e33383076c3)
+
 </br>
 
 터치 이벤트를 구현할 때는 단순히 **터치 여부를 체크**하는 것도 중요하지만, **터치한 영역의 좌표가 필요한 경우도 존재**한다.
@@ -182,6 +184,8 @@ bool GameScene::onTouchBegan(Touch* touch, Event* unused_event)
 }
 ```
 </br>
+
+![화면 캡처 2024-09-29 175236](https://github.com/user-attachments/assets/99be7c9f-d567-4fd3-a7f1-428177083fea)
 
 </br>
 </br>
@@ -295,6 +299,8 @@ void GameScene::onTouchesBegan(const std::vector<Touch*>& touches, Event* unused
 }
 ```
 </br>
+
+![화면 캡처 2024-09-29 181036](https://github.com/user-attachments/assets/f35fcee6-7d78-44a6-b6ac-21a4c60a5801)
 
 </br>
 </br>
