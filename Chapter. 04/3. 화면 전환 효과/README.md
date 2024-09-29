@@ -119,6 +119,10 @@ Director::getInstance()->replaceScene(GameScene::createScene());
 ```
 </br>
 
+화면 전환 효과를 적용하지 않는 경우에는 위와 같이 매개변수에 바로 Scene을 입력할 수 있다.
+
+하지만 **화면 전환 효과를 적용할 때는** 바로 입력하는 것보다는 **Scene으로 생성한 후 적용하는 것이 보기 좋다**.
+
 </br>
 
 ```C++
@@ -126,6 +130,8 @@ auto target_scene = GameScene::createScene();
 Director::getInstance()->replaceScene(target_scene);
 ```
 </br>
+
+그러면 이제 화면 전환 효과를 적용해보자.
 
 </br>
 
