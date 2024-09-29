@@ -149,6 +149,8 @@ void GameScene::changeScene(Ref* sender)
 ```
 </br>
 
+![화면 캡처 2024-09-29 145616](https://github.com/user-attachments/assets/ac20ddfb-4a4f-436d-a282-bbae556cf8a2)
+
 </br>
 </br>
 
@@ -171,6 +173,8 @@ popScene()은 따로 매개변수를 받지 않고, 지금 **화면에 보이는
 이렇게 화면에 보여질 때는 **직전의 화면 상태가 그대로 유지된 채로 다시 화면에 보여진다**.
 
 </br>
+
+![화면 캡처 2024-09-29 151812](https://github.com/user-attachments/assets/072a9fd9-184c-4c70-be15-0b850974785e)
 
 </br>
 
