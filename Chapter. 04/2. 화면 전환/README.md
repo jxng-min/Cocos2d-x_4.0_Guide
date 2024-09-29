@@ -91,8 +91,6 @@ void MenuScene::changeScene(Ref* sender)
 
 #### GameScene.h
 
-</br>
-
 ```C++
 #ifndef __GAME_SCENE_H__
 #define __GAME_SCENE_H__
@@ -117,8 +115,6 @@ public:
 </br>
 
 #### GameScene.cpp
-
-</br>
 
 ```C++
 #include "GameScene.h"
