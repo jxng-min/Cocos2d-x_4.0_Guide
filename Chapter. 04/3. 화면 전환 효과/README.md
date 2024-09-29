@@ -143,3 +143,5 @@ void MenuScene::changeScene(Ref* sender)
 }
 ```
 </br>
+
+![화면 캡처 2024-09-29 155333](https://github.com/user-attachments/assets/62c49fa7-0d00-4b44-b077-1e718ddb4221)
