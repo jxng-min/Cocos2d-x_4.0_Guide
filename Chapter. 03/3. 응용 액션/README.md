@@ -504,6 +504,10 @@ bool HelloWorld::init()
 ```
 </br>
 
+![화면 캡처 2024-09-29 134426](https://github.com/user-attachments/assets/dc205499-ef38-476a-aefb-cc3e4425794b)
+
+</br>
+
 #### CallFuncN
 
 메소드를 호출할 때 매개변수로 액션을 실행하는 객체 및 다른 특정한 값을 받는다.
@@ -539,6 +543,7 @@ void HelloWorld::setCallFunc_1(Ref* sender)
 ```
 </br>
 
+![화면 캡처 2024-09-29 134010](https://github.com/user-attachments/assets/95e8bd7b-aefb-40d2-8426-400886d61c8c)
 
 </br>
 
@@ -570,6 +575,8 @@ void HelloWorld::setCallFunc_2(Ref* sender, void* d)
 }
 ```
 </br>
+
+![화면 캡처 2024-09-29 133911](https://github.com/user-attachments/assets/8c1eae7b-1467-48b5-b8b4-1997db2b6deb)
 
 </br>
 
@@ -608,3 +615,5 @@ void HelloWorld::setCallFunc_3(Ref* sender, Ref* object)
 }
 ```
 </br>
+
+![화면 캡처 2024-09-29 134322](https://github.com/user-attachments/assets/81767578-b089-4d19-8b2e-ff9cb0b400c7)
