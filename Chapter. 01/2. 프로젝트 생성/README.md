@@ -31,6 +31,8 @@
 
 </br>
 
+![화면 캡처 2024-09-29 193529](https://github.com/user-attachments/assets/37b5e752-7a0f-46c6-8aad-90b7dbb0849f)
+
 </br>
 
 코코스2d-x로 게임을 개발할 때 구현한 **소스는 Classes 폴더에 생성**하고, **리소스 파일은 Resources 폴더에 복사**하면 된다.
@@ -78,7 +80,7 @@ CMake로 .sln을 생성했다면 이를 바로 실행하는 것이 아닌 **코�
 
 CMake로 .sln을 생성한 후 코코스2d-x 컴파일을 마쳤다면 .sln 파일을 실행해도 된다.
 
-.sln을 열고나서 빌드하기 전에 프로젝트 구성을 할 필요가 있다.
+.sln을 열고나서 **빌드하기 전에 프로젝트 구성을 할 필요가 있다**.
 
 </br>
 
@@ -86,6 +88,14 @@ CMake로 .sln을 생성한 후 코코스2d-x 컴파일을 마쳤다면 .sln 파�
 
 </br>
 
+![스크린샷 2024-09-29 194638](https://github.com/user-attachments/assets/7db3bdfa-aafb-46b8-a392-4a24dc0160e2)
+
+</br>
+
 시작 프로젝트 구성을 들어가면 "한 개의 시작 프로젝트"를 클릭하고 자신이 생성한 프로젝트로 지정한다.
 
-그리고 적용 버튼을 만드시 눌러줘야 한다.
+그리고 **적용 버튼을 만드시 눌러줘야 한다**.
+
+</br>
+
+![스크린샷 2024-09-29 194701](https://github.com/user-attachments/assets/23d6ad9c-495b-47fc-a816-f8e32fe8ea35)
