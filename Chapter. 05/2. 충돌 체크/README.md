@@ -141,3 +141,5 @@ bool GameScene::onTouchBegan(Touch* touch, Event* unused_event)
 }
 ```
 </br>
+
+![화면 캡처 2024-09-29 191448](https://github.com/user-attachments/assets/495ec74f-589a-4316-915f-d3ff0697f945)
