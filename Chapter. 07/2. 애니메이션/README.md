@@ -52,7 +52,7 @@ void GameScene::setAnimation()
 ```
 </br>
 
-
+![화면 캡처 2024-10-01 171331](https://github.com/user-attachments/assets/b7ee7417-7db6-4895-a5d3-c2b47838b32c)
 
 </br>
 
