@@ -31,11 +31,15 @@
 
 </br>
 
+![화면 캡처 2024-10-01 162653](https://github.com/user-attachments/assets/e54a1567-8a9f-4043-b566-6212d1d43003)
+
 </br>
 
 아틀라스 이미지를 만들려면 먼저 왼쪽 상단에 있는 **Open Project 버튼을 클릭해서 합치려는 이미지를 선택**하거나, 합치려는 **이미지를 모두 선택한 후 Sprites 박스 안으로 드래그**한다.
 
 </br>
+
+![화면 캡처 2024-10-01 163620](https://github.com/user-attachments/assets/6d17a7e7-f2b6-4f04-b3a7-686331378481)
 
 </br>
 
@@ -88,6 +92,8 @@ bool GameScene::init()
 그리고 **.plist는 xml로 작성된 파일**이기 때문에 .plist에 포함되어 있는 **프레임의 이름은 frames 항목에 모두 저장**되어 있다.
 
 </br>
+
+![화면 캡처 2024-10-01 164520](https://github.com/user-attachments/assets/dccc3ca3-936d-4b58-9dde-f1b078c19375)
 
 </br>
 
