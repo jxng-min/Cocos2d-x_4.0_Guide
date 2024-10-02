@@ -52,6 +52,8 @@ void GameScene::InitBackground()
 ```
 </br>
 
+![화면 캡처 2024-10-02 164400](https://github.com/user-attachments/assets/16991d4b-782a-43f2-b349-c46950e8744a)
+
 </br>
 
 단일 이미지 배경 스크롤과 유사하게 bg2.png를 가지고 스프라이트 2개를 만들었고, 레이어 하나를 더 추가해서 레이어에 액션 기능을 적용했다.
