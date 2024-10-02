@@ -54,6 +54,10 @@ bg1.png의 **가로 크기가 2000픽셀이기 때문에 왼쪽 방향으로 200
 
 </br>
 
+![화면 캡처 2024-10-02 161041](https://github.com/user-attachments/assets/6da4ec71-2170-4c18-97e7-d4d8ed2077e4)
+
+</br>
+
 하지만, 이미지의 크기만큼 이동하기 때문에 **이미지의 오른쪽 끝부분이 화면의 왼쪽 끝까지 올 때까지 화면에는 아무런 이미지도 출력되지 않는다**.
 
 </br>
@@ -99,3 +103,39 @@ void GameScene::InitBackground()
 ```
 </br>
 
+![화면 캡처 2024-10-02 162206](https://github.com/user-attachments/assets/82438ae5-4d37-417e-8862-a9e5525b2a3c)
+
+</br>
+
+> auto background_layer = Layer::create();    
+> this->addChild(background_layer);    
+
+스프라이트 2개를 추가할 배경 레이어를 만들어서 화면에 추가한다.
+
+</br>
+
+> auto background_sprite2 = Sprite::create("bg1.png", Rect(0, 0, 480, 320));    
+> background_sprite2->setAnchorPoint(Point::ZERO);    
+> background_sprite2->setPosition(Point(2000, 0));    
+> background_layer->addChild(background_sprite2);    
+
+화면 끊김을 없애기 위해 bg1.png 이미지로 화면의 영역만큼만 스프라이트를 만들어서 첫 번째 스프라이트 뒤에 추가한다.
+
+</br>
+
+> background_layer->addChild(background_sprite1);    
+> background_layer->addChild(background_sprite2);    
+
+2개의 스프라이트는 this의 자식으로 두는 것이 아닌 배경 레이어의 자식으로 둔다.
+
+</br>
+
+> background_layer->runAction(repeat_action);
+
+스프라이트가 아닌 배경 레이어에 액션 기능을 적용한다.
+
+</br>
+
+이렇게 배경을 구현할 때는 배경 이미지에 직접 액션 기능을 적용하는 것보다 레이어를 새로 만드는 것이 좋다.
+
+**레이어에 배경 이미지의 스프라이트를 추가하고 레이어에 액션 기능을 적용하는 것이 좀 더 효율적**이다.
