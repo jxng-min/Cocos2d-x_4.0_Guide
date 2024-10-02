@@ -21,6 +21,8 @@ void GameScene::InitBackground()
 ```
 </br>
 
+![화면 캡처 2024-10-02 174534](https://github.com/user-attachments/assets/bd1440eb-1ec5-4dfe-9418-38957a002679)
+
 </br>
 
 tile.png의 크기가 33×49이기 때문에 480×320의 화면을 타일 이미지로 채우기 위해서 반복문으로 tile.png를 15×7개의 바둑판 모양으로 스프라이트를 생성한 후 출력한다.
