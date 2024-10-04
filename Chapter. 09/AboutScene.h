@@ -5,6 +5,8 @@
 
 USING_NS_CC;
 
+#define TAG_ITEM_BACK			1
+
 class AboutScene : public Layer
 {
 private:
@@ -15,6 +17,11 @@ public:
 
 	virtual bool init();
 	CREATE_FUNC(AboutScene);
+
+	void InitData();
+	void InitBackground();
+	void InitAboutMenu();
+	void MenuCallback(Ref* sender);
 };
 
 #endif
