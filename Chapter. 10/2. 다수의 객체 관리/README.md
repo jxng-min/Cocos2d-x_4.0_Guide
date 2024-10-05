@@ -48,6 +48,8 @@ InitSmile()의 메소드명을 **SetSmile()로 변경**했고, **태그 값을 �
 
 </br>
 
+![화면 캡처 2024-10-05 122729](https://github.com/user-attachments/assets/c3eda88c-8443-43e1-bda9-7620bd29f859)
+
 </br>
 </br>
 
