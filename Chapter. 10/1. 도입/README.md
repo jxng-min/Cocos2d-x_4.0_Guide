@@ -105,6 +105,8 @@ bool GameScene::onTouchBegan(Touch* touch, Event* unused_event)
 ```
 </br>
 
+![화면 캡처 2024-10-05 121830](https://github.com/user-attachments/assets/8e5461d0-7235-45cf-8bd8-0e3bb6892157)
+
 </br>
 
 위의 코드에서는 출력된 이미지가 1개라서 태그 값으로 간단하게 이미지의 영역을 가져와서 충돌 체크를 했다.
