@@ -68,12 +68,13 @@ void GameScene::InitData()
     listener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
     Director::getInstance()->getEventDispatcher()->addEventListenerWithFixedPriority(listener, 1);
 
-    // 랜덤 값 생성을 위함
+    // 랜덤 값 생성을 위한 기준 값을 현재 시간으로 초기화
     srand(time(NULL));
 }
 
 void GameScene::InitSmile()
 {
+    // 화면 내부에서 랜덤하게 생성되도록, rand() 사용
     auto x = rand() % static_cast<int>(m_win_size.width);
     auto y = rand() % static_cast<int>(m_win_size.height);
 
@@ -92,6 +93,7 @@ bool GameScene::onTouchBegan(Touch* touch, Event* unused_event)
 
     if (smile_rect.containsPoint(location))
     {
+        // 스마일의 크기가 0.25보다 작다면 메모리를 해제하고, 그렇지 않다면 2배 축소
         if (smile_sprite->getScale() <= 0.25)
             this->removeChild(smile_sprite);
         else
@@ -102,3 +104,11 @@ bool GameScene::onTouchBegan(Touch* touch, Event* unused_event)
 }
 ```
 </br>
+
+</br>
+
+위의 코드에서는 출력된 이미지가 1개라서 태그 값으로 간단하게 이미지의 영역을 가져와서 충돌 체크를 했다.
+
+하지만, **이미지의 개수가 여러 개라면 태그 값으로 이미지의 영역을 가져오는 것이 조금 복잡**해진다.
+
+그리고 태그 값이 아닌 **스프라이트 배열을 사용**해서 구현할 경우에도 스프라이트의 개수가 정적이면 상관없지만, **동적이면 배열을 사용하는 것도 불편**하다.
