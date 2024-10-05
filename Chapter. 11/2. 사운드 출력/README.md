@@ -135,11 +135,49 @@ SimpleAudioEngine::getInstance()->playEffect(const char* pszFilePath, bool bLoop
 </br>
 
 ```C++
-SimpleAudioEngine::getInstance()->pauseEffect(unsigned int nSoundId);
-SimpleAudioEngine::getInstance()->pauseAllEffects();
-SimpleAudioEngine::getInstance()->resumeEffect(unsigned int nSoundId);
-SimpleAudioEngine::getInstance()->resumeAllEffects();
-SimpleAudioEngine::getInstance()->stopEffect(unsigned int nSoundId);
-SimpleAudioEngine::getInstance()->stopAllEffects();
+SimpleAudioEngine::getInstance()->pauseEffect(unsigned int nSoundId);       // ID값으로 해당 효과음을 일시정지
+SimpleAudioEngine::getInstance()->pauseAllEffects();                        // 모든 효과음을 일시정지
+
+SimpleAudioEngine::getInstance()->resumeEffect(unsigned int nSoundId);      // 일시정지된 효과음을 ID값으로 다시 재개
+SimpleAudioEngine::getInstance()->resumeAllEffects();                       // 모든 효과음을 다시 재개
+
+SimpleAudioEngine::getInstance()->stopEffect(unsigned int nSoundId);        // ID값으로 해당 효과음을 중지
+SimpleAudioEngine::getInstance()->stopAllEffects();                         // 모든 효과음을 중지
 ```
 </br>
+</br>
+
+### 11.2.5 사운드 관련 기타 메소드
+
+</br>
+
+코코스2d-x는 사운드의 출력과 관련된 메소드뿐만 아니라 **소리의 크기를 제어**하거나 **배경음과 효과음을 미리 로딩하는 메소드도 제공**한다.
+
+</br>
+
+```C++
+SimpleAudioEngine::getInstance()->isBackgroundMusicPlaying();                           // 배경음의 출력 여부를 bool로 반환
+
+SimpleAudioEngine::getInstance()->setBackgroundMusicVolume(float volume);               // 배경음의 소리 크기를 설정(0.0 ~ 1.0)
+SimpleAudioEngine::getInstance()->setEffectsVolume(float volume);                       // 효과음의 소리 크기를 설정(0.0 ~ 1.0)
+
+SimpleAudioEngine::getInstance()->getBackgroundMusicVolume();                           // 배경음의 소리 크기를 float(0.0 ~ 1.0)으로 반환
+SimpleAudioEngine::getInstance()->getEffectsVolume();                                   // 효과음의 소리 크기를 float(0.0 ~ 1.0)으로 반환
+```
+</br>
+</br>
+</br>
+
+```C++
+SimpleAudioEngine::getInstance()->preloadBackgroundMusic(const char* pszFilePath);
+SimpleAudioEngine::getInstance()->preloadEffect(const char* pszFilePath);
+```
+</br>
+
+위의 메소드들은 **배경음과 효과음을 미리 로딩**하는 메소드다. 사운드를 미리 로딩하면 **사운드를 출력할 때 로딩하지 않고 바로 실행**된다.
+
+코코스2d-x의 경우, **사운드를 출력하면 해당 사운드 파일을 로딩하며, 한 번 로딩된 사운드 파일은 메모리 풀에 저장되어서 2번째 출력부터는 로딩하지 않는다**.
+
+하지만, 메모리 풀도 크기에 제한이 있으므로 **더 이상 사용되지 않는 사운드는 사운드를 중지할 때 메모리 풀에서 제거**하는 것이 효율적이다.
+
+배경음의 경우 사운드를 중지할 때 stopBackgroundMusic(true)와 같이 **매개변수로 true를 입력하면 해당 사운드 파일이 메모리 풀에서도 완전히 제거**된다.
