@@ -30,6 +30,8 @@ bool GameScene::init()
 ```
 </br>
 
+![화면 캡처 2024-10-14 185914](https://github.com/user-attachments/assets/dc5d4278-949b-4e36-bf62-a5d5f8793ff0)
+
 </br>
 
 일반적인 **스프라이트의 경우 setContentSize()를 사용해도 동작하지 않는다**. 하지만 **Scale9Sprite의 경우에는 설정한 컨텐츠의 크기만큼 확대**가 된다.
@@ -37,6 +39,8 @@ bool GameScene::init()
 setScale()을 이용하여 확대한 것과는 큰 차이를 가진다. **Scale9Sprite는 setContentSize()로 이미지를 9등분해서 새로운 스프라이트를 만든다**.
 
 </br>
+
+![images](https://github.com/user-attachments/assets/a9729c58-505e-4344-b28a-2ab625a2f4fd)
 
 </br>
 
@@ -85,6 +89,8 @@ bool GameScene::init()
 
 </br>
 
+![화면 캡처 2024-10-14 193945](https://github.com/user-attachments/assets/8bd7cf40-4d16-4542-a0f5-38c87cdb1686)
+
 </br>
 
 이렇게 **Scale9Sprite를 사용해서 사각형 이미지를 만들면 팝업 테두리에 해당되는 이미지는 깨지지 않고 확대**되는 것을 확인할 수 있다.
@@ -117,6 +123,8 @@ bool GameScene::init()
 ```
 
 </br>
+
+![화면 캡처 2024-10-14 194917](https://github.com/user-attachments/assets/abb1734a-37b1-4203-bef9-6e12d450246b)
 
 </br>
 
