@@ -29,6 +29,8 @@ bool GameScene::init()
 ```
 </br>
 
+![화면 캡처 2024-10-14 200743](https://github.com/user-attachments/assets/6441880a-ea5e-4a04-bd84-f26e070d65d7)
+
 </br>
 
 위의 예제는 에디트 박스를 사용해서 이름을 입력받는 코드다.
@@ -162,6 +164,8 @@ bool GameScene::init()
 ```
 
 </br>
+
+![화면 캡처 2024-10-14 204157](https://github.com/user-attachments/assets/bdb9df43-6835-4887-8a83-6cdedf09ae8e)
 
 </br>
 </br>
